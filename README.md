@@ -1,10 +1,8 @@
-# Getting Started with Create React App
+# Prueba Tecnica para FPay Noviembre 2020
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## proyecto en ReactJS 
 
-## Available Scripts
-
-In the project directory, you can run:
+para correrlo, luego de instalar npm:
 
 ### `npm start`
 
