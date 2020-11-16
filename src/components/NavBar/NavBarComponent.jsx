@@ -7,10 +7,10 @@ const NavBarComponent =(props)=>{
 return(
     <>
     <Navbar bg="secondary" variant="dark">
-      <Navbar.Brand href="#home">Prueba Técnica</Navbar.Brand> 
+      <Navbar.Brand>Prueba Técnica</Navbar.Brand> 
       <Nav className="mr-auto">
-      <Nav.Link as={Link} to="/one" href="#home">Exercise One</Nav.Link>
-      <Nav.Link as={Link} to="/two" href="#home">Exercise Two</Nav.Link>
+      <Nav.Link as={Link} to="/one" >Exercise One</Nav.Link>
+      <Nav.Link as={Link} to="/two">Exercise Two</Nav.Link>
       </Nav>
     </Navbar>
     </>

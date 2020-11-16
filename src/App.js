@@ -4,9 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import {Switch,Route} from 'react-router-dom';
 import ExerciseOneComponent from './components/exerciseOne/ExerciseOneComponent';
 import ExerciseTwoComponent from './components/exerciseTwo/ExerciseTwoComponent';
-import LandingComponent from './components/Landing/LandingComponent';
-
-
 import './App.css';
 import NavBarComponent from './components/NavBar/NavBarComponent';
 
