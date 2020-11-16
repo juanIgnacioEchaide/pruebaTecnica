@@ -17,7 +17,7 @@ function ExerciseTwoComponent(props) {
 
     const getFizzBuzz=()=>{
         let arrayReturned=[];
-        for(let i=1; i<16;i++){
+        for(let i=1; i<=input.number;i++){
             if(i%3===0 || i%5===0){
                 if(i%3===0 & i%5==0){
                     arrayReturned.push('fizzbuzz')
@@ -50,16 +50,19 @@ function ExerciseTwoComponent(props) {
                             onChange={handleInputChange}/>
                <Button onClick={getFizzBuzz}>GO</Button>  
             </div>
-
-            {returnedArray.map(i => 
-                <div>{i}</div>)
-            }
+            <div className={"row bg-light jsutify-content-around m-2"}>
+                {returnedArray.map(i => 
+                        <div style={{height:'2%', width:'10%',justifyContent:'center'}} 
+                        className={"bg-dark m-2 p-2 text-white rounded"}>
+                            {i}</div>)
+                    }
+            </div>
             <div className={"row bg-light jsutify-content-around"}>
-            { warning===true ?
-                        <div className={"bg-success alert alert-danger ml-5"} role="alert">
-                            <p>¡Debes ingresar un numero entero!</p>   
-                        </div>
-                        : <></>}
+                { warning===true ?
+                            <div className={"bg-success alert alert-danger ml-5"} role="alert">
+                                <p>¡Debes ingresar un numero entero!</p>   
+                            </div>
+                            : <></>}
             </div>
         </div>
     )
